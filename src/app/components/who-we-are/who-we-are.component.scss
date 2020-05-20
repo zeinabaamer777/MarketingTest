@@ -48,5 +48,18 @@ h2{
     .who_we_are{
         margin-top: 30px;
         flex: 1;
+       
+    }
+}
+
+@media screen and (max-width: 500px){
+
+
+
+    h2 {
+        font-size: 43px;
+    }
+    .who_we_are{
+        margin-top: 103px;
     }
 }

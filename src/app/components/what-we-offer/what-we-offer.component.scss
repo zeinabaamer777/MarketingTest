@@ -45,3 +45,17 @@ h2{
         -webkit-box-orient: vertical;
     }
 }
+
+
+
+@media screen and (max-width: 500px){
+
+    .content{
+        margin-top: 103px;
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 43px;
+        text-align: center;
+    }
+}
