@@ -1,0 +1,52 @@
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+h2{
+    font-size: 50px;
+}
+.img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 90%;
+    }
+}
+.who_we_are{
+    position: relative;
+    flex: 1.5;
+    img{
+        width: 100%;
+    }
+
+    .des{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contain{
+            width: 60%;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+
+    .content{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .who_we_are{
+        margin-top: 30px;
+        flex: 1;
+    }
+}

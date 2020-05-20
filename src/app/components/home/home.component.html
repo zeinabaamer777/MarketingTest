@@ -1,0 +1,43 @@
+<nav>
+    <div class="container">
+        <div class="logo">
+            <img *ngIf="isactive" src="/assets/logo.svg" alt="">
+            <img *ngIf="!isactive" src="/assets/logo2.svg" alt="">
+        </div>
+        
+        <div class="hamburger" (click)="openMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul [ngClass]="{open: isOpen}" class="nav-links">
+            <li><a (click)="scroll(home)">HOME</a></li>
+            <li><a (click)="scroll(services)">SERVICES</a></li>
+            <li><a (click)="scroll(price)">PRICES</a></li>
+            <li><a (click)="scroll(contact)">CONTACT</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class="scroll" (click)="scroll(home)">
+    <img src="/assets/scroll.svg" alt="">
+</div>
+
+<div #home>
+    <app-header ></app-header>
+</div>
+<app-who-we-are></app-who-we-are>
+<div #services>
+    <app-what-we-offer ></app-what-we-offer>
+</div>
+<div #price>
+    <app-our-pricing></app-our-pricing>
+</div>
+
+<div #contact>
+    <app-subscription></app-subscription>
+</div>
+
+<app-footer></app-footer>
+

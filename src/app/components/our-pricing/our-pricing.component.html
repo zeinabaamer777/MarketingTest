@@ -1,0 +1,16 @@
+<div class="content">
+  <h2 class="title">Our Pricing</h2>
+  <div class="container">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div class="card-item">
+          <h2>{{slide.name}}</h2>
+          <p>{{slide.des | slice:0:120}}...</p>
+          <p class="price">{{slide.price}}</p>
+          <button  class="btn btn-primary">See Details</button>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+</div>
+</div>
+

@@ -1,0 +1,7 @@
+<div class="content">
+    <h2>Do you want to get <strong>Special News?</strong></h2>
+    <form class="form-inline" [formGroup]="formEmail" (ngSubmit)="onSubmit()">
+        <input type="email" class="form-control" placeholder="Drop Your Email" formControlName="email">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+</div>

@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+.btn{
+    width: auto;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(97,86,249,1) 0%, rgba(26,18,159,1) 100%);
+    border: 0px;
+}
